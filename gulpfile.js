@@ -8,7 +8,7 @@ var gulp = require( 'gulp' ),
     browserSync = require( 'browser-sync' ),
     reload = browserSync.reload;
 
-var assets = '.wp-content/themes/marketingworks/assets';
+var assets = './wp-content/themes/marketingworks/assets';
 var config = {
     sassDir: assets + '/sass',
     cssDir: assets + '/css',
@@ -34,7 +34,7 @@ gulp.task('styles', function() {
         .pipe(autoprefixer('last 3 version', 'ie 8', 'ie 9'))
         .pipe(rename({suffix: '.min'}))
         .pipe(minifyCSS())
-        .pipe(gulp.dest(assets + '/css'))
+        .pipe(gulp.dest( config.cssDir ))
         .pipe(reload({stream: true}));
 });
 
