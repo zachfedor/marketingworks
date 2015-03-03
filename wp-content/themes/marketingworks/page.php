@@ -1,7 +1,7 @@
 <?php
 
-add_action('genesis_before_loop', 'gsep_featured_image');
-function gsep_featured_image(){
+add_action('genesis_before_loop', 'mw_featured_image');
+function mw_featured_image(){
     $attachment_id = get_post_thumbnail_id();
     $attachment_obj = wp_get_attachment_image_src($attachment_id, 'full');
     $attachment_src = $attachment_obj[0];

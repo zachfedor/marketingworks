@@ -3,13 +3,15 @@
 // Header
 header.site-header {
   min-height: 50px;
+  background: $green;
+  text-align: center;
 
   .wrap {
     padding: $padding 0;
   }
 
   h1.site-title a {
-    background: url("../../assets/images/logo.png") no-repeat scroll left center transparent;
+//    background: url("../../assets/images/logo.png") no-repeat scroll left center transparent;
     height: 81px;
   }
 }
