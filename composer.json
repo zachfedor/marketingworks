@@ -1,11 +1,11 @@
 {
-    "name"        : "fedor/alpine-blur",
-    "description" : "wordpress theme for my portfolio page",
+    "name"        : "tower/marketingworks",
+    "description" : "wordpress theme for marketing works",
     "authors"     : [
         {
             "name"    : "zach fedor",
-            "email"   : "zachfedor@gmail.com",
-            "homepage": "http://zachfedor.com"
+            "email"   : "fedor@towermarketing.net",
+            "homepage": "http://towermarketing.net"
         }
     ],
     "type"        : "project",

@@ -1,8 +1,8 @@
 {
-  "name": "Alpine Blur",
+  "name": "marketingworks",
   "version": "0.0.1",
   "authors": [
-    "Zach Fedor <zachfedor@gmail.com>"
+    "Zach Fedor <fedor@towermarketing.net>"
   ],
   "main": "index.php",
   "license": "MIT",
