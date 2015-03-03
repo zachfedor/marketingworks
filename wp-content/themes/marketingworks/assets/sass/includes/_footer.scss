@@ -1,0 +1,27 @@
+/***** Footer ******/
+
+footer.site-footer {
+  text-align: left;
+  background: $green;
+  color: #ffffff;
+
+  p.copyright {
+    padding-top: $padding * 2;
+    font-size: 0.7rem;
+  }
+}
+
+#menu-footer-menu {
+  li {
+    display: inline-block;
+
+    a {
+      color: #ffffff;
+      margin-right: $padding;
+      font-size: 0.9rem;
+      &:hover {
+        color: $text;
+      }
+    }
+  }
+}

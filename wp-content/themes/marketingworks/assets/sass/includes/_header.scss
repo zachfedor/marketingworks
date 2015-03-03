@@ -1,0 +1,39 @@
+/***** Header *****/
+
+// Header
+header.site-header {
+  min-height: 50px;
+
+  .wrap {
+    padding: $padding 0;
+  }
+
+  h1.site-title a {
+    background: url("../../assets/images/logo.png") no-repeat scroll left center transparent;
+    height: 81px;
+  }
+}
+
+.hd-right-widget {
+  text-align: right;
+
+  div.row:first-of-type {
+    margin-bottom: $padding;
+  }
+}
+
+.hd-top-row {
+  float: right;
+  padding-bottom: $padding;
+}
+.hd-top-navigation {
+  float: left;
+  display: block;
+  padding-right: $padding / 2;
+}
+.hd-social-navigation {
+  border-left: 1px solid $green;
+  float: left;
+  display: block;
+  padding-left: $padding;
+}
