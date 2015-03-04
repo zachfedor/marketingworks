@@ -2,40 +2,76 @@
 
 // Header
 header.site-header {
-  min-height: 50px;
+  position: relative;
+  width: 100%;
+  z-index: 999;
   background: $green;
   text-align: center;
+  min-height: inherit;
 
-  .wrap {
-    padding: $padding 0;
-  }
+  h1.site-title {
+    bottom: auto;
+    left: 50%;
+    margin-left: -73px;
+    padding: 0;
+    position: absolute;
+    top: 0px;
+    width: 147px;
+    z-index: 100;
 
-  h1.site-title a {
-    background: url("../../assets/images/logo.png") no-repeat scroll left center transparent;
-    height: 110px;
+    a {
+      background: url("../../assets/images/logo.png") no-repeat scroll left center transparent;
+      height: 110px;
+      position: relative;
+      margin-top: 5px;
+
+      &:before {
+        content: "";
+        background: url("../../assets/images/header-gear.png") no-repeat center;
+        position: absolute;
+        top: -15px;
+        left: -49px;
+        display: block;
+        width: 253px;
+        height: 182px;
+        z-index: -1;
+        transition: transform $time, left $time;
+        transform: rotate(-5deg);
+      }
+
+      &:hover {
+        &:before {
+          transform: rotate(5deg);
+          left: -53px;
+        }
+      }
+    }
   }
 }
 
-.hd-right-widget {
-  text-align: right;
+// menus
+.nav-primary, .nav-secondary {
+  background: none;
+  padding: $padding 0;
 
-  div.row:first-of-type {
-    margin-bottom: $padding;
+  .genesis-nav-menu a {
+    color: $header;
+    text-transform: uppercase;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 0.8rem;
+    font-weight: bold;
   }
 }
 
-.hd-top-row {
+.nav-primary {
+  float: left;
+}
+
+.nav-secondary {
   float: right;
-  padding-bottom: $padding;
 }
-.hd-top-navigation {
-  float: left;
-  display: block;
-  padding-right: $padding / 2;
-}
-.hd-social-navigation {
-  border-left: 1px solid $green;
-  float: left;
-  display: block;
-  padding-left: $padding;
+
+.genesis-nav-menu a:hover, .genesis-nav-menu .current-menu-item > a, .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
+
 }

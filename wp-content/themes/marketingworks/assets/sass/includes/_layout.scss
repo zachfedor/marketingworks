@@ -1,1 +1,7 @@
 /***** Layout *****/
+
+header.site-header div.wrap, footer.site-footer div.wrap {
+  width: 100%;
+  padding: 0 3%;
+  max-width: none;
+}

@@ -22,8 +22,8 @@ function gsep_do_footer() {
     </div>
     <div class="row">
         <div class="col-sm-12">
-            <p class="copyright">The GIRL SCOUTS name, mark, and all associated trademarks and logotypes, including the Trefoil Design, are owned by GSUSA.<br>
-            &copy; <?php echo date("Y"); ?> Girl Scouts Council of Eastern Pennsylvania. All rights Reserved.</p>
+            <p class="copyright">
+            &copy; <?php echo date("Y"); ?> </p>
         </div>
     </div>
     <?php
