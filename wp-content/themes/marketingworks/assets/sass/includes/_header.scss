@@ -52,15 +52,24 @@ header.site-header {
 // menus
 .nav-primary, .nav-secondary {
   background: none;
-  padding: $padding 0;
+  padding: 0;
 
   .genesis-nav-menu a {
     color: $header;
     text-transform: uppercase;
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: $padding;
+    padding-bottom: $padding;
     font-size: 0.8rem;
     font-weight: bold;
+    transition: color $time;
+
+    &:hover {
+      color: $bluedark;
+    }
+  }
+
+  .mw-menu-phone a:hover {
+    color: $header;
   }
 }
 
@@ -70,8 +79,4 @@ header.site-header {
 
 .nav-secondary {
   float: right;
-}
-
-.genesis-nav-menu a:hover, .genesis-nav-menu .current-menu-item > a, .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
-
 }
