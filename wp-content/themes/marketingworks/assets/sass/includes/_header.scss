@@ -20,14 +20,14 @@ header.site-header {
     z-index: 100;
 
     a {
-      background: url("../../assets/images/logo.png") no-repeat scroll left center transparent;
+      background: url($images + "logo.png") no-repeat scroll left center transparent;
       height: 110px;
       position: relative;
       margin-top: 5px;
 
       &:before {
         content: "";
-        background: url("../../assets/images/header-gear.png") no-repeat center;
+        background: url($images + "header-gear.png") no-repeat center;
         position: absolute;
         top: -15px;
         left: -49px;

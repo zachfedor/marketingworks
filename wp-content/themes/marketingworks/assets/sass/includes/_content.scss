@@ -5,6 +5,20 @@ div.site-inner {
   padding-top: $padding;
 }
 
-.breadcrumb {
-  margin-bottom: $padding;
+// homepage
+aside.mw-feature {
+//  background: url( $images + "hero-image.png") no-repeat center center;
+//  background-size: cover;
+
+  p.mw-feature-text {
+    color: $white;
+    font-size: 3rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    strong {
+      font-weight: 500;
+      background-color: $bluedark;
+
+    }
+  }
 }

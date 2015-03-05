@@ -13,10 +13,23 @@ function mw_home_layout( $opt )
     return $opt;
 }
 
-add_filter( 'genesis_before_content', 'mw_hero_image' );
+add_action( 'genesis_after_header', 'mw_hero_image' );
 function mw_hero_image()
 {
-    echo "fetured image";
+    ?>
+    <aside class="mw-feature">
+<!--        <p class="mw-feature-text">-->
+<!--            Creating strategically <strong>disruptive,</strong><br/>-->
+<!--            Experientially <strong>remarkable,</strong><br/>-->
+<!--            Undeniably <strong>unexpected,</strong><br/>-->
+<!--            Ways to <strong>wow, engage,</strong><br/>-->
+<!--        </p>-->
+<!--        <p class="mw-feature-text">-->
+<!--            and inspire - <strong>together-->
+<!--        </p>-->
+        <img src="<?php echo get_stylesheet_directory_uri() . "/assets/images/hero-image.png"; ?>" alt="Featured Image"/>
+    </aside>
+    <?php
 }
 
 genesis();
