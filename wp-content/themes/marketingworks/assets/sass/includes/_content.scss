@@ -1,14 +1,17 @@
 /***** Content *****/
 
-// content layout
-div.site-inner {
-  padding-top: $padding;
+//global
+body {
+  background-color: $white;
 }
 
 // homepage
 aside.mw-feature {
-//  background: url( $images + "hero-image.png") no-repeat center center;
-//  background-size: cover;
+  background: url( $images + "hero-image.png") no-repeat center center;
+  background-size: cover;
+  margin-left: -1px;
+  padding-top: $padding * 8;
+  padding-bottom: $padding * 2;
 
   p.mw-feature-text {
     color: $white;
@@ -18,7 +21,29 @@ aside.mw-feature {
     strong {
       font-weight: 500;
       background-color: $bluedark;
-
+      padding: 0 10px;
     }
+  }
+}
+
+.mw-section-green {
+  background: $green;
+
+  .mw-section-heading {
+    color: $white;
+  }
+}
+
+.mw-section-blue {
+  background: $blue;
+  color: $white;
+  text-align: center;
+}
+
+.mw-section-white {
+  text-align: center;
+
+  .mw-section-heading {
+    color: $green;
   }
 }

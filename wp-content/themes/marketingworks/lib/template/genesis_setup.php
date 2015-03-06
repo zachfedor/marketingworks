@@ -43,7 +43,7 @@ genesis_unregister_layout( 'sidebar-sidebar-content' );
 genesis_unregister_layout( 'sidebar-content-sidebar' );
 
 // Adding a wrap to full-width structural elements
-add_theme_support( 'genesis-structural-wraps', array( 'header', 'inner', 'footer' ) );
+add_theme_support( 'genesis-structural-wraps', array( 'header', 'footer' ) );
 
 //* Add HTML5 markup structure
 add_theme_support( 'html5', array( 'search-form', 'comment-form', 'comment-list' ) );
