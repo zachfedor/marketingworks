@@ -5,7 +5,44 @@ body {
   background-color: $white;
 }
 
-// homepage
+a.mw-button {
+  text-transform: uppercase;
+  text-align: center;
+  color: $white;
+  background: $blue;
+  border: 1px solid $blue;
+  padding: $padding;
+  display: inline-block;
+  text-decoration: none;
+  transition: color $time, background $time;
+
+  &:hover {
+    background: $bluedark;
+  }
+  &:active {
+    background: transparent;
+    color: $blue;
+  }
+
+  &.mw-button-primary, &.mw-button-primary:visited {
+    background: $green;
+    border-color: $green;
+
+    &:hover {
+      background: $greendark;
+    }
+    &:active {
+      background: transparent;
+      color: $green;
+    }
+  }
+
+  & + & {
+    margin-left: $padding * 2;
+  }
+}
+
+/*** homepage ***/
 aside.mw-feature {
   background: url( $images + "hero-image.png") no-repeat center center;
   background-size: cover;
@@ -26,11 +63,72 @@ aside.mw-feature {
   }
 }
 
+/* REMOVE THIS BLOCK */
+/* WHEN HOME CONTENT */
+/* IS FIXED */
+.content {
+  float: none;
+}
+
+// tab headings
+.mw-tabs {
+  background: $greylight;
+  .mw-tab {
+    color: $header;
+    font-size: 1.2rem;
+    text-align: center;
+    padding-top: $padding;
+    padding-bottom: $padding;
+    margin: 0;
+
+    &.mw-tab-current {
+      background: rgba($purple, 0.5);
+      color: $white;
+    }
+  }
+}
+
+// tab sections
+.mw-tab-section {
+  background: $purple;
+  color: rgba($white, 0.8);
+  padding: ($padding * 4) 0;
+  display: none;
+
+  &.mw-tab-section-current {
+    display: block;
+  }
+
+  .mw-tab-heading {
+    color: $white;
+    text-transform: uppercase;
+    width: 60%;
+  }
+  .mw-tab-body {
+    width: 60%;
+  }
+}
+
+// main sections
+.mw-section-heading {
+  color: $white;
+  text-transform: uppercase;
+  padding: $padding 0;
+}
+
 .mw-section-green {
   background: $green;
+  height: 1000px;
+  position: relative;
+
+  .mw-section-hero {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
 
   .mw-section-heading {
-    color: $white;
+    margin-top: $padding * 8;
   }
 }
 
@@ -38,6 +136,23 @@ aside.mw-feature {
   background: $blue;
   color: $white;
   text-align: center;
+  padding: ($padding * 4) 0;
+
+  .mw-section-heading, .mw-section-body {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .mw-section-logos {
+    width: 100%;
+     span {
+       display: block;
+       float: left;
+       width: 10%;
+       & + & {
+         margin-left: 2.5%;
+       }
+     }
+  }
 }
 
 .mw-section-white {

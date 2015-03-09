@@ -49,11 +49,13 @@ function mw_homepage_tabs()
     $right_tab_body = get_field("right_tab_body");
 
     ?>
-    <div class="mw-tabs wrap">
-        <div class="row mw-tabs-head">
-            <h2 id="mw-tab-left" class="mw-tab col-sm-4"><?php echo $left_tab_title; ?></h2>
-            <h2 id="mw-tab-center" class="mw-tab mw-tab-current col-sm-4"><?php echo $center_tab_title ?></h2>
-            <h2 id="mw-tab-right" class="mw-tab col-sm-4"><?php echo $right_tab_title; ?></h2>
+    <div class="mw-tabs">
+        <div class="wrap container-wrap">
+            <div class="row mw-tabs-head">
+                <h2 id="mw-tab-left" class="mw-tab col-sm-4"><?php echo $left_tab_title; ?></h2>
+                <h2 id="mw-tab-center" class="mw-tab mw-tab-current col-sm-4"><?php echo $center_tab_title ?></h2>
+                <h2 id="mw-tab-right" class="mw-tab col-sm-4"><?php echo $right_tab_title; ?></h2>
+            </div>
         </div>
     </div>
 
@@ -92,10 +94,10 @@ function mw_homepage_sections()
 
     ?>
     <article class="mw-section-green">
+        <img class="mw-section-hero" src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/portfolio-hero-image.png" alt="Portfolio"/>
         <div class="wrap">
             <div class="row">
                 <div class="col-sm-6">
-                    <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/portfolio-hero-image.png" alt="Portfolio"/>
                 </div>
                 <div class="col-sm-6">
                     <h2 class="mw-section-heading"><?php echo $green_heading; ?></h2>
@@ -109,15 +111,15 @@ function mw_homepage_sections()
         <div class="wrap">
             <h2 class="mw-section-heading"><?php echo $blue_heading; ?></h2>
             <div class="mw-section-body"><?php echo $blue_body; ?></div>
-            <div class="mw-history-logos">
-                <span class="mw-history-logo mw-history-logo-1"></span>
-                <span class="mw-history-logo mw-history-logo-2"></span>
-                <span class="mw-history-logo mw-history-logo-3"></span>
-                <span class="mw-history-logo mw-history-logo-4"></span>
-                <span class="mw-history-logo mw-history-logo-5"></span>
-                <span class="mw-history-logo mw-history-logo-6"></span>
-                <span class="mw-history-logo mw-history-logo-7"></span>
-                <span class="mw-history-logo mw-history-logo-8"></span>
+            <div class="mw-section-logos">
+                <span><img class="alignnone size-full wp-image-189" src="http://localhost/marketingworks/wp-content/uploads/2015/03/history-logo-one.png" alt="history-logo-one" width="216" height="21" /></span>
+                <span><img class="alignnone size-full wp-image-193" src="http://localhost/marketingworks/wp-content/uploads/2015/03/history-logo-two.png" alt="history-logo-two" width="116" height="65" /></span>
+                <span><img class="alignnone size-full wp-image-192" src="http://localhost/marketingworks/wp-content/uploads/2015/03/history-logo-three.png" alt="history-logo-three" width="109" height="66" /></span>
+                <span><img class="alignnone size-full wp-image-188" src="http://localhost/marketingworks/wp-content/uploads/2015/03/history-logo-four.png" alt="history-logo-four" width="86" height="65" /></span>
+                <span><img class="alignnone size-full wp-image-187" src="http://localhost/marketingworks/wp-content/uploads/2015/03/history-logo-five.png" alt="history-logo-five" width="161" height="63" /></span>
+                <span><img class="alignnone size-full wp-image-191" src="http://localhost/marketingworks/wp-content/uploads/2015/03/history-logo-six.png" alt="history-logo-six" width="149" height="68" /></span>
+                <span><img class="alignnone size-full wp-image-190" src="http://localhost/marketingworks/wp-content/uploads/2015/03/history-logo-seven.png" alt="history-logo-seven" width="218" height="44" /></span>
+                <span><img class="alignnone size-full wp-image-186" src="http://localhost/marketingworks/wp-content/uploads/2015/03/history-logo-eight.png" alt="history-logo-eight" width="110" height="59" /></span>
             </div>
         </div>
     </article>
