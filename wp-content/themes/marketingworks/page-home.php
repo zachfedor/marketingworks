@@ -33,6 +33,8 @@ function mw_hero_image()
     <?php
 }
 
+remove_action( 'genesis_entry_header', 'genesis_do_entry_header' );
+
 add_action('genesis_after_content', 'mw_homepage_tabs');
 function mw_homepage_tabs()
 {

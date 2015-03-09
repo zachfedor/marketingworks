@@ -8,6 +8,16 @@ footer.site-footer {
   p {
     padding: $padding 0;
   }
+
+  a {
+    color: $white;
+    text-decoration: none;
+    transition: text-decoration $time, color $time;
+    &:hover {
+      color: $grey;
+      text-decoration: underline;
+    }
+  }
 }
 
 .mw-contact-info {
@@ -22,4 +32,8 @@ footer.site-footer {
   padding-top: $padding * 2;
   padding-bottom: $padding * 2;
   padding-right: 5%;
+
+  .mw-section-heading, .mw-section-body {
+    padding-left: $padding * 2;
+  }
 }
