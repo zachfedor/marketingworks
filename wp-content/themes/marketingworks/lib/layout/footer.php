@@ -8,22 +8,17 @@ add_action( 'genesis_footer', 'gsep_do_footer' );
 function gsep_do_footer() {
     ?>
     <div class="row">
-        <div class="col-xs-6">
-            <?php
-                if ( has_nav_menu( 'footer-menu' ) ) { /* if menu location 'footer-menu' exists then use custom menu */
-                    wp_nav_menu( array( 'theme_location' => 'footer-menu',
-                                        'container' => 'nav' ) );
-                }
-            ?>
+        <div class="col-sm-3 mw-contact-info">
+            <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/logo-whiteout.png" alt=""/>
+            <p>Marketing Works<br>
+                3315 Concord Road<br>
+                York, Pennsylvania 17402<br>
+                717-852-7171</p>
+            <p><a href="#">Terms</a> - <a href="#">Privacy Policy</a></p>
+            <p>&copy; Copyright <?php echo date("Y"); ?> Marketing Works. All rights reserved.</p>
         </div>
-        <div class="col-xs-6">
-            <?php include 'social-nav.php'; ?>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-12">
-            <p class="copyright">
-            &copy; <?php echo date("Y"); ?> </p>
+        <div class="col-sm-9 mw-contact-form">
+
         </div>
     </div>
     <?php

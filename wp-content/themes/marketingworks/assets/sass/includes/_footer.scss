@@ -1,27 +1,25 @@
 /***** Footer ******/
 
 footer.site-footer {
+  color: $white;
+  padding: 0;
   text-align: left;
-  background: $green;
-  color: #ffffff;
 
-  p.copyright {
-    padding-top: $padding * 2;
-    font-size: 0.7rem;
+  p {
+    padding: $padding 0;
   }
 }
 
-#menu-footer-menu {
-  li {
-    display: inline-block;
+.mw-contact-info {
+  background: $red;
+  padding-top: $padding * 2;
+  padding-bottom: $padding * 2;
+  padding-left: 5%;
+}
 
-    a {
-      color: #ffffff;
-      margin-right: $padding;
-      font-size: 0.9rem;
-      &:hover {
-        color: $text;
-      }
-    }
-  }
+.mw-contact-form {
+  background: $grey;
+  padding-top: $padding * 2;
+  padding-bottom: $padding * 2;
+  padding-right: 5%;
 }

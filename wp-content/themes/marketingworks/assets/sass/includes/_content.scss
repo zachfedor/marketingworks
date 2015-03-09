@@ -11,6 +11,7 @@ a.mw-button {
   color: $white;
   background: $blue;
   border: 1px solid $blue;
+//  box-shadow: 4px 4px 0 $bluedark;
   padding: $padding;
   display: inline-block;
   text-decoration: none;
@@ -18,6 +19,7 @@ a.mw-button {
 
   &:hover {
     background: $bluedark;
+//    border-color: $bluedark;
   }
   &:active {
     background: transparent;
@@ -27,9 +29,11 @@ a.mw-button {
   &.mw-button-primary, &.mw-button-primary:visited {
     background: $green;
     border-color: $green;
+//    box-shadow: 4px 4px 0 $greendark;
 
     &:hover {
       background: $greendark;
+//      border-color: $greendark;
     }
     &:active {
       background: transparent;
@@ -113,7 +117,11 @@ aside.mw-feature {
 .mw-section-heading {
   color: $white;
   text-transform: uppercase;
-  padding: $padding 0;
+  padding: ($padding * 2) 0;
+}
+
+.mw-section-body {
+  padding-bottom: ($padding * 2);
 }
 
 .mw-section-green {
@@ -144,21 +152,30 @@ aside.mw-feature {
   }
   .mw-section-logos {
     width: 100%;
-     span {
-       display: block;
-       float: left;
-       width: 10%;
-       & + & {
-         margin-left: 2.5%;
-       }
-     }
+    span {
+      display: block;
+      float: left;
+      width: 10%;
+
+      img {
+        height: auto;
+      }
+    }
+    span + span {
+      margin-left: 2.5%;
+    }
   }
 }
 
 .mw-section-white {
   text-align: center;
+  padding: ($padding * 4) 0;
 
   .mw-section-heading {
     color: $green;
+  }
+  .mw-section-heading, .mw-section-body {
+    width: 60%;
+    margin: 0 auto;
   }
 }
