@@ -11,5 +11,6 @@ function gsep_enqueue_scripts(){
     wp_enqueue_style('main-css', 'http://192.168.100.60:3000/marketingworks/wp-content/themes/marketingworks/assets/css/theme.min.css');
 
     wp_enqueue_script( 'jquery' );
+    wp_enqueue_script('easytabs-js', get_bloginfo('stylesheet_directory') . '/assets/js/jquery.easytabs.min.js', array('jquery'), '1', true);
     wp_enqueue_script('main-js', get_bloginfo('stylesheet_directory') . '/assets/js/main.js', array('jquery'), '1', true);
 }

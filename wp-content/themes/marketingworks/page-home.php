@@ -33,7 +33,26 @@ function mw_hero_image()
     <?php
 }
 
-remove_action( 'genesis_entry_header', 'genesis_do_entry_header' );
+remove_action( 'genesis_entry_header', 'genesis_entry_header_markup_open', 5 );
+remove_action( 'genesis_entry_header', 'genesis_do_post_title' );
+remove_action( 'genesis_entry_header', 'genesis_entry_header_markup_close', 15 );
+remove_action( 'genesis_entry_content', 'genesis_do_post_content' );
+
+add_action( 'genesis_entry_content', 'mw_entry_content' );
+function mw_entry_content() {
+    ?>
+    <div class="wrap">
+        <div class="row">
+            <div class="col-sm-5">
+                <?php the_post_thumbnail(); ?>
+            </div>
+            <div class="col-sm-7">
+                <?php the_content(); ?>
+            </div>
+        </div>
+    </div>
+    <?php
+}
 
 add_action('genesis_after_content', 'mw_homepage_tabs');
 function mw_homepage_tabs()
@@ -51,34 +70,34 @@ function mw_homepage_tabs()
     $right_tab_body = get_field("right_tab_body");
 
     ?>
-    <div class="mw-tabs">
-        <div class="wrap container-wrap">
-            <div class="row mw-tabs-head">
-                <h2 id="mw-tab-left" class="mw-tab col-sm-4"><?php echo $left_tab_title; ?></h2>
-                <h2 id="mw-tab-center" class="mw-tab mw-tab-current col-sm-4"><?php echo $center_tab_title ?></h2>
-                <h2 id="mw-tab-right" class="mw-tab col-sm-4"><?php echo $right_tab_title; ?></h2>
+    <div class="mw-tabs" id="mw-tabs">
+        <div class="wrap">
+            <ul class="row mw-tabs-head" id="mw-tabs-head">
+                <li class="mw-tab col-sm-4"><a href="#mw-section-left" ><?php echo $left_tab_title; ?></a></li>
+                <li class="mw-tab col-sm-4" id="mw-tab-default"><a href="#mw-section-center" ><?php echo $center_tab_title ?></a></li>
+                <li class="mw-tab col-sm-4"><a href="#mw-section-right" ><?php echo $right_tab_title; ?></a></li>
+            </ul>
+        </div>
+
+        <div id="mw-section-left" class="mw-tab-section">
+            <div class="wrap">
+                <h3 class="mw-tab-heading"><?php echo $left_tab_heading; ?></h3>
+                <div class="mw-tab-body"><?php echo $left_tab_body; ?></div>
+            </div>
+        </div>
+        <div id="mw-section-center" class="mw-tab-section mw-tab-section-current">
+            <div class="wrap">
+                <h3 class="mw-tab-heading"><?php echo $center_tab_heading ?></h3>
+                <div class="mw-tab-body"><?php echo $center_tab_body ?></div>
+            </div>
+        </div>
+        <div id="mw-section-right" class="mw-tab-section">
+            <div class="wrap">
+                <h3 class="mw-tab-heading"><?php echo $right_tab_heading; ?></h3>
+                <div class="mw-tab-body"><?php echo $right_tab_body; ?></div>
             </div>
         </div>
     </div>
-
-    <article id="mw-section-left" class="mw-tab-section">
-        <div class="wrap">
-            <h3 class="mw-tab-heading"><?php echo $left_tab_heading; ?></h3>
-            <div class="mw-tab-body"><?php echo $left_tab_body; ?></div>
-        </div>
-    </article>
-    <article id="mw-section-center" class="mw-tab-section mw-tab-section-current">
-        <div class="wrap">
-            <h3 class="mw-tab-heading"><?php echo $center_tab_heading ?></h3>
-            <div class="mw-tab-body"><?php echo $center_tab_body ?></div>
-        </div>
-    </article>
-    <article id="mw-section-right" class="mw-tab-section">
-        <div class="wrap">
-            <h3 class="mw-tab-heading"><?php echo $right_tab_heading; ?></h3>
-            <div class="mw-tab-body"><?php echo $right_tab_body; ?></div>
-        </div>
-    </article>
     <?php
 }
 

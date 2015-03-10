@@ -6,6 +6,7 @@ $greendark: #d1d122;
 $blue: #009bbc;
 $bluedark: #048a9c;
 $purple: #5d2e8d;
+$purplelight: #9074AD;
 $red: #d71440;
 $grey: #b9b9b9;
 $greylight: #dddddd;
@@ -17,6 +18,9 @@ $padding: 1rem;
 
 // transitions
 $time: 0.2s;
+
+// breakpoints
+$break-small: 768px;
 
 // stuff
 $images: '../../assets/images/';

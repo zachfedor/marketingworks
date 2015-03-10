@@ -20,6 +20,6 @@ function gsep_do_footer() {
 
             </div>
         </div>
-    </div>
+    </div><!-- .row -->
     <?php
 }

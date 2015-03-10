@@ -1,14 +1,10 @@
 // main.js
 
 (function($) {
-    var hoverTimeout;
-    $('#menu-primary-menu li').hover(function() {
-        clearTimeout(hoverTimeout);
-        $(this).addClass('hover');
-    }, function() {
-        var $self = $(this);
-        hoverTimeout = setTimeout(function() {
-            $self.removeClass('hover');
-        }, 1000);
+    $('#mw-tabs').easytabs({
+        tabs: "ul#mw-tabs-head > li",
+        defaultTab: "li#mw-tab-default",
+        updateHash: false
     });
 })( jQuery );
+
