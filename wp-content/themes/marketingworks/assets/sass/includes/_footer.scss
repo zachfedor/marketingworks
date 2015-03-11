@@ -5,6 +5,7 @@ footer.site-footer {
   background: $grey;
   padding: 0;
   text-align: left;
+  position: relative;
 
   .row {
     margin: 0;
@@ -23,6 +24,14 @@ footer.site-footer {
       text-decoration: underline;
     }
   }
+
+  &:after {
+    content: url( $images + 'footer-background.png');
+    position: absolute;
+    right: 0;
+    bottom: -2px;
+    z-index: 0;
+  }
 }
 
 .mw-contact-info {
@@ -37,12 +46,45 @@ footer.site-footer {
   padding-top: $padding * 2;
   padding-bottom: $padding * 2;
   padding-right: 5%;
+  position: relative;
+
+  form {
+    margin-left: -15px;
+  }
 
   .mw-section-heading, .mw-section-body {
     padding-left: $padding * 2;
+    position: relative;
+    z-index: 1;
   }
 
   .mw-section-heading {
     padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  label {
+    text-indent: -9999px;
+    color: $grey;
+  }
+
+  input, select {
+    margin: $padding 0;
+    padding: $padding;
+    background: transparent;
+    color: $white;
+    border: 1px solid $white;
+    text-align: left;
+  }
+
+  ::placeholder {
+    color: $white;
+  }
+
+  #mw-submit {
+    background: $blue;
+    border-color: $blue;
+    width: 100%;
+    text-align: center;
   }
 }
