@@ -237,13 +237,20 @@ main.content, .mw-tab-section, .mw-section {
     top: 0;
     right: 10%;
     z-index: 0;
-    content: url( $images + "about-background-one.png" );
   }
   &:after {
     position: absolute;
     bottom: -10px;
     left: 10%;
     z-index: 0;
+  }
+}
+
+main.content {
+  &:before {
+    content: url( $images + "about-background-one.png" );
+  }
+  &:after {
     content: url( $images + "about-background-two.png" );
   }
 }
@@ -252,7 +259,7 @@ main.content, .mw-tab-section, .mw-section {
   &:before {
     content: url( $images + "tab-section-background.png" );
     top: 10px;
-    right: 25%;
+    right: 35%;
   }
   &:after {
     content: "";
@@ -265,6 +272,8 @@ main.content, .mw-tab-section, .mw-section {
   }
   &:after {
     content: url( $images + 'work-background-two.png' );
+    bottom: 10px;
+    left: 40%;
   }
 }
 
