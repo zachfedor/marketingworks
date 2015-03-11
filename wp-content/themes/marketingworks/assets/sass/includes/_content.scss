@@ -228,6 +228,64 @@ div.entry-content {
   }
 }
 
+// stupid gears
+main.content, .mw-tab-section, .mw-section {
+  position: relative;
+
+  &:before {
+    position: absolute;
+    top: 0;
+    right: 10%;
+    z-index: 0;
+    content: url( $images + "about-background-one.png" );
+  }
+  &:after {
+    position: absolute;
+    bottom: -10px;
+    left: 10%;
+    z-index: 0;
+    content: url( $images + "about-background-two.png" );
+  }
+}
+
+.mw-tab-section {
+  &:before {
+    content: url( $images + "tab-section-background.png" );
+    top: 10px;
+    right: 25%;
+  }
+  &:after {
+    content: "";
+  }
+}
+
+.mw-section-green {
+  &:before {
+    content: url( $images + 'work-background-one.png' );
+  }
+  &:after {
+    content: url( $images + 'work-background-two.png' );
+  }
+}
+
+.mw-section-blue {
+  &:before {
+    content: url( $images + 'history-background-one.png' );
+  }
+  &:after {
+    content: url( $images + 'history-background-two.png' );
+  }
+}
+
+.mw-section-white {
+  &:before {
+    content: url( $images + 'news-background-one.png' );
+  }
+  &:after {
+    content: url( $images + 'news-background-two.png' );
+  }
+}
+
 /*** archive pages ***/
 .entry {
   padding: 0;

@@ -5,6 +5,8 @@ header.site-header div.wrap, footer.site-footer div.wrap, div.site-inner div.wra
   max-width: none;
   margin: 0 5%;
   padding: 0;
+  position: relative;
+  z-index: 1;
 
   & .container-wrap {
     padding: 0 15px;

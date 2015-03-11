@@ -114,7 +114,7 @@ function mw_homepage_sections()
     $white_body = get_field( "white_body" );
 
     ?>
-    <article class="mw-section-green">
+    <article class="mw-section mw-section-green">
         <img class="mw-section-hero" src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/portfolio-hero-image.png" alt="Portfolio"/>
         <div class="wrap">
             <div class="row">
@@ -128,7 +128,7 @@ function mw_homepage_sections()
         </div>
     </article>
 
-    <article class="mw-section-blue">
+    <article class="mw-section mw-section-blue">
         <div class="wrap">
             <h2 class="mw-section-heading"><?php echo $blue_heading; ?></h2>
             <div class="mw-section-body"><?php echo $blue_body; ?></div>
@@ -145,7 +145,7 @@ function mw_homepage_sections()
         </div>
     </article>
 
-    <article class="mw-section-white">
+    <article class="mw-section mw-section-white">
         <div class="wrap">
             <h2 class="mw-section-heading"><?php echo $white_heading; ?></h2>
             <div class="mw-section-body"><?php echo $white_body; ?></div>
