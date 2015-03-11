@@ -97,6 +97,28 @@ function mw_homepage_tabs()
                 <div class="mw-tab-body"><?php echo $right_tab_body; ?></div>
             </div>
         </div>
+
+        <div id="mw-tab-form">
+            <form action="">
+                <div class="mw-tab-form-header">
+                    <h3>Ready To Unlock Your Boldness?</h3>
+                    <p>Fill out the form below and we will be in touch shortly</p>
+                </div>
+                <div class="mw-tab-form-section">
+                    <input name="mw-name" id="mw-name" type="text" placeholder="Name" />
+                    <input name="mw-phone" id="mw-phone" type="text" placeholder="Phone" />
+                    <select name="mw-info" id="mw-info">
+                        <option value="">Information You're Looking For</option>
+                        <option value="marketing">Marketing</option>
+                        <option value="contact">Contact</option>
+                        <option value="careers">Careers</option>
+                    </select>
+                    <input name="mw-org" id="mw-org" type="text" placeholder="Business / Company Name" />
+                    <input name="mw-email" id="mw-email" type="email" placeholder="Email" />
+                </div>
+                <input name="mw-submit" id="mw-submit" class="mw-submit" type="submit" value="Send Message" />
+            </form>
+        </div>
     </div>
     <?php
 }
@@ -151,6 +173,27 @@ function mw_homepage_sections()
             <div class="mw-section-body"><?php echo $white_body; ?></div>
         </div>
     </article>
+    <?php
+}
+
+add_action( 'genesis_before_footer', 'mw_prefooter' );
+function mw_prefooter() {
+    ?>
+    <aside class="mw-prefooter row">
+        <div class="col-xs-6 col-md-3 mw-prefooter-block">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/awards-block-01.png" alt="widget 1"/>
+        </div>
+        <div class="col-xs-6 col-md-3 mw-prefooter-block">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/news-block-01.png" alt="widget 2"/>
+        </div>
+        <div class="col-xs-6 col-md-3 mw-prefooter-block">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/hiring-block-01.png" alt="widget 3"/>
+        </div>
+        <div class="col-xs-6 col-md-3 mw-prefooter-block">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/social-block-01.png" alt="widget 4"/>
+        </div>
+    </aside>
+
     <?php
 }
 

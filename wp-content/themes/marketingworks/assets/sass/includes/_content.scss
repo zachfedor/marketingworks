@@ -47,6 +47,7 @@ div.entry-content {
 // tab sections
 .mw-tabs {
   background: $greylight;
+  position: relative;
 
   .mw-tabs-head {
     list-style-type: none;
@@ -107,11 +108,12 @@ div.entry-content {
   background: $purple;
   color: rgba($white, 0.8);
   padding: ($padding * 4) 0;
+  min-height: 450px;
 //  display: none;
 
-  &.mw-tab-section-current {
-    display: block;
-  }
+//  &.mw-tab-section-current {
+//    display: block;
+//  }
 
   .mw-tab-heading {
     color: $white;
@@ -120,6 +122,70 @@ div.entry-content {
   }
   .mw-tab-body {
     width: 60%;
+  }
+}
+
+#mw-tab-form {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  margin: 0 3% 0 0;
+  width: 30%;
+  font-size: 0.9rem;
+  background: $greylight;
+
+  .mw-tab-form-header {
+    width: 100%;
+    background: $header;
+    padding: $padding;
+
+    h3, p {
+      padding: 0;
+      margin: 0;
+      color: $white;
+    }
+
+    h3, .mw-submit {
+      font-size: 1.3rem;
+    }
+  }
+
+  .mw-tab-form-section {
+    padding: $padding;
+
+    input, select {
+      color: $header;
+      border: 1px solid $header;
+      background: transparent;
+      margin: 0 0 $padding 0;
+      width: 100%;
+      padding: $padding / 2;
+      font-size: 0.9rem;
+    }
+
+    ::placeholder {
+      color: $header;
+    }
+  }
+
+  .mw-submit {
+    background: $green;
+    color: $header;
+    border: 1px solid $green;
+    width: 100%;
+
+    &:hover {
+      background: $header;
+      color: $green;
+      border-color: $header;
+    }
+
+    &:active {
+      background: transparent;
+      color: $green;
+      border-color: $green;
+    }
   }
 }
 
@@ -255,6 +321,22 @@ main.content {
   }
   &:after {
     content: url( $images + 'news-background-two.png' );
+  }
+}
+
+// prefooter
+aside.mw-prefooter {
+  margin: 0;
+  background: $black;
+
+  div.mw-prefooter-block {
+    padding: 0;
+
+    img {
+      height: 100%;
+      width: 100%;
+      display: block;
+    }
   }
 }
 
