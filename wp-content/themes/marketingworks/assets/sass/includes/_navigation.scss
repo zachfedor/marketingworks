@@ -9,3 +9,42 @@ a {
     border-bottom: px solid $green;
   }
 }
+
+// buttons
+
+a.mw-button {
+  text-transform: uppercase;
+  text-align: center;
+  color: $white;
+  background: $blue;
+  border: 1px solid $blue;
+//  box-shadow: 4px 4px 0 $bluedark;
+  padding: $padding;
+  margin: $padding;
+  margin-left: 0;
+  display: inline-block;
+  text-decoration: none;
+  transition: color $time, background $time;
+
+  &:hover {
+    background: $bluedark;
+//    border-color: $bluedark;
+  }
+  &:active {
+    background: transparent;
+    color: $blue;
+  }
+
+  &.mw-button-primary, &.mw-button-primary:visited {
+    background: $green;
+    border-color: $green;
+
+    &:hover {
+      background: $greendark;
+    }
+    &:active {
+      background: transparent;
+      color: $green;
+    }
+  }
+}
