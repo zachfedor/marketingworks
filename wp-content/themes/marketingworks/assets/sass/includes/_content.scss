@@ -5,44 +5,6 @@ body {
   background-color: $white;
 }
 
-a.mw-button {
-  text-transform: uppercase;
-  text-align: center;
-  color: $white;
-  background: $blue;
-  border: 1px solid $blue;
-//  box-shadow: 4px 4px 0 $bluedark;
-  padding: $padding;
-  display: inline-block;
-  text-decoration: none;
-  transition: color $time, background $time;
-
-  &:hover {
-    background: $bluedark;
-//    border-color: $bluedark;
-  }
-  &:active {
-    background: transparent;
-    color: $blue;
-  }
-
-  &.mw-button-primary, &.mw-button-primary:visited {
-    background: $green;
-    border-color: $green;
-
-    &:hover {
-      background: $greendark;
-    }
-    &:active {
-      background: transparent;
-      color: $green;
-    }
-  }
-
-  & + & {
-    margin-left: $padding * 2;
-  }
-}
 
 /*** homepage ***/
 aside.mw-feature {
@@ -181,6 +143,7 @@ div.entry-content {
     position: absolute;
     left: 0;
     top: 0;
+    z-index: 1;
   }
 
   .mw-section-heading {
