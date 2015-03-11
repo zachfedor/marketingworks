@@ -2,8 +2,13 @@
 
 footer.site-footer {
   color: $white;
+  background: $grey;
   padding: 0;
   text-align: left;
+
+  .row {
+    margin: 0;
+  }
 
   p {
     padding: $padding 0;
@@ -35,5 +40,9 @@ footer.site-footer {
 
   .mw-section-heading, .mw-section-body {
     padding-left: $padding * 2;
+  }
+
+  .mw-section-heading {
+    padding-top: 0;
   }
 }
