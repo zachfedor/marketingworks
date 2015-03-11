@@ -6,7 +6,7 @@
  */
 
 // Set the page layout to full-width
-add_filter( 'genesis_pre_get_option_site_layout', 'mw_home_layout' );
+add_filter( 'genesis_pre_get_option_home_layout', 'mw_home_layout' );
 function mw_home_layout( $opt )
 {
     $opt = 'full-width-content'; // You can change this to any Genesis layout
@@ -133,14 +133,14 @@ function mw_homepage_sections()
             <h2 class="mw-section-heading"><?php echo $blue_heading; ?></h2>
             <div class="mw-section-body"><?php echo $blue_body; ?></div>
             <div class="mw-section-logos">
-                <span><img src="http://localhost/marketingworks/wp-content/uploads/2015/03/history-logo-one.png" alt="history-logo-one" width="216" height="21" /></span>
-                <span><img src="http://localhost/marketingworks/wp-content/uploads/2015/03/history-logo-two.png" alt="history-logo-two" width="116" height="65" /></span>
-                <span><img src="http://localhost/marketingworks/wp-content/uploads/2015/03/history-logo-three.png" alt="history-logo-three" width="109" height="66" /></span>
-                <span><img src="http://localhost/marketingworks/wp-content/uploads/2015/03/history-logo-four.png" alt="history-logo-four" width="86" height="65" /></span>
-                <span><img src="http://localhost/marketingworks/wp-content/uploads/2015/03/history-logo-five.png" alt="history-logo-five" width="161" height="63" /></span>
-                <span><img src="http://localhost/marketingworks/wp-content/uploads/2015/03/history-logo-six.png" alt="history-logo-six" width="149" height="68" /></span>
-                <span><img src="http://localhost/marketingworks/wp-content/uploads/2015/03/history-logo-seven.png" alt="history-logo-seven" width="218" height="44" /></span>
-                <span><img src="http://localhost/marketingworks/wp-content/uploads/2015/03/history-logo-eight.png" alt="history-logo-eight" width="110" height="59" /></span>
+                <span><img src="<?php echo get_home_url(); ?>/wp-content/uploads/2015/03/history-logo-one.png" alt="history-logo-one" width="216" height="21" /></span>
+                <span><img src="<?php echo get_home_url(); ?>/wp-content/uploads/2015/03/history-logo-two.png" alt="history-logo-two" width="116" height="65" /></span>
+                <span><img src="<?php echo get_home_url(); ?>/wp-content/uploads/2015/03/history-logo-three.png" alt="history-logo-three" width="109" height="66" /></span>
+                <span><img src="<?php echo get_home_url(); ?>/wp-content/uploads/2015/03/history-logo-four.png" alt="history-logo-four" width="86" height="65" /></span>
+                <span><img src="<?php echo get_home_url(); ?>/wp-content/uploads/2015/03/history-logo-five.png" alt="history-logo-five" width="161" height="63" /></span>
+                <span><img src="<?php echo get_home_url(); ?>/wp-content/uploads/2015/03/history-logo-six.png" alt="history-logo-six" width="149" height="68" /></span>
+                <span><img src="<?php echo get_home_url(); ?>/wp-content/uploads/2015/03/history-logo-seven.png" alt="history-logo-seven" width="218" height="44" /></span>
+                <span><img src="<?php echo get_home_url(); ?>/wp-content/uploads/2015/03/history-logo-eight.png" alt="history-logo-eight" width="110" height="59" /></span>
             </div>
         </div>
     </article>
