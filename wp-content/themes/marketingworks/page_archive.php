@@ -4,29 +4,60 @@
 
 add_filter('genesis_pre_get_option_site_layout', '__genesis_return_full_width_content');
 
-error_log("no genesis");
+remove_action( 'genesis_loop', 'genesis_do_loop' );
+add_action( 'genesis_loop', 'gsep_archive_loop' );
 function gsep_archive_loop() {
     global $post;
 
-    // arguments, adjust as needed
-    $args = array(
-        'post_type' => 'post',
-        'posts_per_page' => 1,
-        'post_status' => 'publish',
-        'paged' => get_query_var( 'paged' )
-    );
+    if ( get_the_title() == "Our Work" ) {
+        $args = array(
+            'post_type' => 'post',
+            'post_status' => 'publish',
+            'post_per_page' => -1,
+            'nopaging' => true,
+            'category_name' => 'work'
+        );
+    } else if ( get_the_title() == "The Who" ) {
+        $args = array(
+            'post_type' => 'post',
+            'post_status' => 'publish',
+            'post_per_page' => -1,
+            'nopaging' => true,
+            'category_name' => 'people'
+        );
+    }
+
+
 
     // Use $loop, a custom variable we made up, so it doesn't overwrite anything
     $loop = new WP_Query( $args );
 
+//    var_dump($loop);
     // have_posts() is a wrapper function for $wp_query->have_posts(). Since we
     // don't want to use $wp_query, use our custom variable instead.
     if ( $loop->have_posts() ) :
-        echo '<ul class="dick">';
+        ?>
+        <div class="mw-post-list">
+        <?php
+
         while ( $loop->have_posts() ) : $loop->the_post();
-            echo '<li>' . get_the_title() . '</li>';
+            ?>
+            <article class="mw-post-list-item row">
+                <div class="col-sm-4">
+                    <?php get_post_thumbnail_id(); ?>
+                </div>
+                <div class="col-sm-8">
+                    <h2 class="mw-post-title"><?php echo get_the_title(); ?></h2>
+                    <div class="mw-post-excerpt"><?php echo get_the_content(); ?></div>
+                </div>
+            </article>
+            <?php
         endwhile;
-        echo '</ul>';
+
+        ?>
+        </div><!-- .mw-post-list -->
+        <?php
+
         do_action( 'genesis_after_endwhile' );
     endif;
 
@@ -34,7 +65,5 @@ function gsep_archive_loop() {
     // we'd need to use wp_reset_query() which does both.
     wp_reset_postdata();
 }
-add_action( 'genesis_loop', 'gsep_archive_loop' );
-remove_action( 'genesis_loop', 'genesis_do_loop' );
 
 genesis();
