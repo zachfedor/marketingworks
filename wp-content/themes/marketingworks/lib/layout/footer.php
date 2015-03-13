@@ -32,7 +32,7 @@ function gsep_do_footer() {
 <!--                        <input name="mw-submit" id="mw-submit" type="submit" value="Send Message" />-->
 <!--                    </div>-->
 <!--                </form>-->
-                <?php echo do_shortcode( '[contact-form-7 id="201" title="Footer Contact Form"]' ); ?>
+                <?php echo do_shortcode( '[contact-form-7 id="210" title="Footer Contact Form"]' ); ?>
             <div class="mw-site-info row">
                 <div class="col-sm-8">
                     <p>&copy; Copyright <?php echo date("Y"); ?> Marketing Works. All rights reserved.</p>
