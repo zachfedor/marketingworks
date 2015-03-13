@@ -41,6 +41,7 @@ remove_action( 'genesis_entry_content', 'genesis_do_post_content' );
 add_action( 'genesis_entry_content', 'mw_entry_content' );
 function mw_entry_content() {
     ?>
+    <a name="about-us"></a>
     <div class="wrap">
         <div class="row">
             <div class="col-sm-4">
@@ -71,6 +72,7 @@ function mw_homepage_tabs()
 
     ?>
     <div class="mw-tabs" id="mw-tabs">
+        <a name="our-services"></a>
         <div class="wrap">
             <ul class="row mw-tabs-head" id="mw-tabs-head">
                 <li class="mw-tab mw-tab-left col-sm-4"><a href="#mw-section-left" ><?php echo $left_tab_title; ?></a></li>
@@ -137,6 +139,7 @@ function mw_homepage_sections()
 
     ?>
     <article class="mw-section mw-section-green">
+        <a name="our-work"></a>
         <div class="wrap">
             <div class="row">
                 <div class="col-sm-5 mw-work-samples">
@@ -230,6 +233,7 @@ function mw_homepage_sections()
     </article>
 
     <article class="mw-section mw-section-white">
+        <a name="news"></a>
         <div class="wrap">
             <h2 class="mw-section-heading"><?php echo $white_heading; ?></h2>
             <div class="mw-section-body"><?php echo $white_body; ?></div>
@@ -255,6 +259,7 @@ function mw_prefooter() {
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/social-block-01.png" alt="widget 4"/>
         </div>
     </aside>
+    <a name="contact-us"></a>
 
     <?php
 }
