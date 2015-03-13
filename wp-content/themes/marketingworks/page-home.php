@@ -145,7 +145,7 @@ function mw_homepage_sections()
                 <div class="col-sm-5 mw-work-samples">
                     <div class="mw-work-sample">
                         <?php $ID = 134; //turkey hill safari ?>
-                        <a class="mw-work-sample"
+                        <a class="mw-work-sample-link"
                            href="our-work/#<?php echo get_the_title( $ID ) ?>"
                            style="background: url('<?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id( $ID ), 'post-thumbnail' );
                            echo $thumb['0']; ?>') no-repeat center center transparent;"></a>
@@ -200,7 +200,7 @@ function mw_homepage_sections()
                            echo $thumb['0']; ?>') no-repeat center center transparent;"></a>
                     </div>
                     <div class="mw-work-sample">
-                        <?php $ID = 134; //marketing works ?>
+                        <?php $ID = 148; //marketing works ?>
                         <a class="mw-work-sample-link"
                            href="our-work/#<?php echo get_the_title( $ID ) ?>"
                            style="background: url('<?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id( $ID ), 'post-thumbnail' );
