@@ -20,10 +20,7 @@ function mw_hero_image()
     <aside class="mw-feature">
         <div class="wrap">
             <p class="mw-feature-text">
-                Creating strategically <strong>disruptive,</strong><br/>
-                Experientially <strong>remarkable,</strong><br/>
-                Undeniably <strong>unexpected,</strong><br/>
-                Ways to <strong>wow,</strong> engage,<br/>
+                Creating strategically <strong>disruptive,</strong> Experientially <strong>remarkable,</strong> Undeniably <strong>unexpected,</strong> Ways to <strong>wow,</strong> engage,
             </p>
             <p class="mw-feature-text">
                 and inspire - <strong>together</strong>
@@ -83,44 +80,71 @@ function mw_homepage_tabs()
 
         <div id="mw-section-left" class="mw-tab-section">
             <div class="wrap">
-                <h3 class="mw-tab-heading"><?php echo $left_tab_heading; ?></h3>
-                <div class="mw-tab-body"><?php echo $left_tab_body; ?></div>
-            </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3 class="mw-tab-heading"><?php echo $left_tab_heading; ?></h3>
+                        <div class="mw-tab-body"><?php echo $left_tab_body; ?></div>
+                    </div>
+
+                    <div class="mw-tab-form col-md-6">
+                        <form method="post" action="">
+                            <div class="mw-tab-form-header">
+                                <h3>Ready To Unlock Your Boldness?</h3>
+                                <p>Fill out the form below and we will be in touch shortly</p>
+                            </div>
+                            <div class="mw-tab-form-section">
+                                <?php echo do_shortcode( '[contact-form-7 id="203" title="Homepage Contact Form"]' ); ?>
+                            </div>
+                        </form>
+                    </div>
+                </div><!-- .row -->
+            </div><!-- .wrap -->
         </div>
         <div id="mw-section-center" class="mw-tab-section mw-tab-section-current">
             <div class="wrap">
-                <h3 class="mw-tab-heading"><?php echo $center_tab_heading ?></h3>
-                <div class="mw-tab-body"><?php echo $center_tab_body ?></div>
-            </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3 class="mw-tab-heading"><?php echo $center_tab_heading ?></h3>
+                        <div class="mw-tab-body"><?php echo $center_tab_body ?></div>
+                    </div>
+
+                    <div class="mw-tab-form col-md-6">
+                        <form method="post" action="">
+                            <div class="mw-tab-form-header">
+                                <h3>Ready To Unlock Your Boldness?</h3>
+                                <p>Fill out the form below and we will be in touch shortly</p>
+                            </div>
+                            <div class="mw-tab-form-section">
+                                <?php echo do_shortcode( '[contact-form-7 id="203" title="Homepage Contact Form"]' ); ?>
+                            </div>
+                        </form>
+                    </div>
+                </div><!-- .row -->
+            </div><!-- .wrap -->
         </div>
         <div id="mw-section-right" class="mw-tab-section">
             <div class="wrap">
-                <h3 class="mw-tab-heading"><?php echo $right_tab_heading; ?></h3>
-                <div class="mw-tab-body"><?php echo $right_tab_body; ?></div>
-            </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3 class="mw-tab-heading"><?php echo $right_tab_heading; ?></h3>
+                        <div class="mw-tab-body"><?php echo $right_tab_body; ?></div>
+                    </div>
+
+                    <div class="mw-tab-form col-md-6">
+                        <form method="post" action="">
+                            <div class="mw-tab-form-header">
+                                <h3>Ready To Unlock Your Boldness?</h3>
+                                <p>Fill out the form below and we will be in touch shortly</p>
+                            </div>
+                            <div class="mw-tab-form-section">
+                                <?php echo do_shortcode( '[contact-form-7 id="203" title="Homepage Contact Form"]' ); ?>
+                            </div>
+                        </form>
+                    </div>
+                </div><!-- .row -->
+            </div><!-- .wrap -->
         </div>
 
-        <div id="mw-tab-form">
-            <form action="">
-                <div class="mw-tab-form-header">
-                    <h3>Ready To Unlock Your Boldness?</h3>
-                    <p>Fill out the form below and we will be in touch shortly</p>
-                </div>
-                <div class="mw-tab-form-section">
-                    <input name="mw-name" id="mw-name" type="text" placeholder="Name" />
-                    <input name="mw-phone" id="mw-phone" type="text" placeholder="Phone" />
-                    <select name="mw-info" id="mw-info">
-                        <option value="">Information You're Looking For</option>
-                        <option value="marketing">Marketing</option>
-                        <option value="contact">Contact</option>
-                        <option value="careers">Careers</option>
-                    </select>
-                    <input name="mw-org" id="mw-org" type="text" placeholder="Business / Company Name" />
-                    <input name="mw-email" id="mw-email" type="email" placeholder="Email" />
-                    <input name="mw-submit" id="mw-submit" class="mw-submit" type="submit" value="Send Message" />
-                </div>
-            </form>
-        </div>
     </div>
     <?php
 }
@@ -200,7 +224,7 @@ function mw_homepage_sections()
                            echo $thumb['0']; ?>') no-repeat center center transparent;"></a>
                     </div>
                     <div class="mw-work-sample">
-                        <?php $ID = 148; //marketing works ?>
+                        <?php $ID = 205; //marketing works ?>
                         <a class="mw-work-sample-link"
                            href="our-work/#<?php echo get_the_title( $ID ) ?>"
                            style="background: url('<?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id( $ID ), 'post-thumbnail' );

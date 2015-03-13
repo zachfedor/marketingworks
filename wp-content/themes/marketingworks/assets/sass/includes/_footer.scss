@@ -2,7 +2,7 @@
 
 footer.site-footer {
   color: $white;
-  background: $grey;
+  background: $red;
   padding: 0;
   text-align: left;
   position: relative;
@@ -73,11 +73,44 @@ footer.site-footer {
     color: $white;
   }
 
-  #mw-submit {
+  .wpcf7-submit {
     background: $blue;
     border-color: $blue;
     width: 100%;
     text-align: center;
+
+    &:hover {
+      background: $bluedark;
+      border-color: $bluedark;
+    }
+
+    &:active {
+      background: transparent;
+      color: $blue;
+    }
+  }
+
+  .wpcf7-not-valid-tip {
+    display: none;
+  }
+  .wpcf7-not-valid {
+    border-color: $red;
+  }
+
+  .wpcf7-response-output {
+    margin: 0 ($padding * 2) $padding;
+    width: 83.3334%;
+    border: none !important;
+    font-size: 1.1rem;
+    font-weight: 700;
+
+    &.wpcf7-validation-errors {
+      color: $red;
+    }
+
+    &.wpcf7-mail-sent-ok {
+      color: $blue;
+    }
   }
 }
 

@@ -147,22 +147,20 @@ div.entry-content {
   .mw-tab-heading {
     color: $white;
     text-transform: uppercase;
-    width: 60%;
-  }
-  .mw-tab-body {
-    width: 60%;
   }
 }
 
-#mw-tab-form {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  z-index: 2;
-  margin: 0 3% 0 0;
-  width: 30%;
+.mw-tab-form {
   font-size: 0.9rem;
-  background: $greylight;
+  padding: 0;
+  margin: 0;
+  position: relative;
+
+  form {
+    width: 90%;
+    float: right;
+    background: $greylight;
+  }
 
   .mw-tab-form-header {
     width: 100%;
@@ -197,12 +195,13 @@ div.entry-content {
       color: $header;
     }
 
-    .mw-submit {
+    .wpcf7-submit {
       background: $green;
       color: $header;
       font-weight: 500;
       border: 1px solid $green;
-      width: 100%;
+      width: 50%;
+      margin: 0;
 
       &:hover {
         background: $header;
@@ -216,8 +215,28 @@ div.entry-content {
         border-color: $header;
       }
     }
-  }
+    .wpcf7-not-valid-tip {
+      display: none;
+    }
+    .wpcf7-not-valid {
+      border-color: $red;
+    }
 
+    .wpcf7-response-output {
+      padding: 0;
+      border: none !important;
+      font-size: 1.1rem;
+      font-weight: 700;
+
+      &.wpcf7-validation-errors {
+        color: $red;
+      }
+
+      &.wpcf7-mail-sent-ok {
+        color: $blue;
+      }
+    }
+  }
 }
 
 // main sections
