@@ -15,15 +15,6 @@ footer.site-footer {
     padding: $padding 0;
   }
 
-  a {
-    color: $white;
-    text-decoration: none;
-    transition: text-decoration $time, color $time;
-    &:hover {
-      color: $grey;
-      text-decoration: underline;
-    }
-  }
 
   &:after {
     content: url( $images + 'footer-background.png');
@@ -44,7 +35,8 @@ footer.site-footer {
 .mw-contact-form {
   background: $grey;
   padding-top: $padding * 2;
-  padding-bottom: $padding * 2;
+//  padding-bottom: $padding * 2;
+  padding-bottom: 0;
   padding-right: 5%;
   position: relative;
 
@@ -54,13 +46,13 @@ footer.site-footer {
 
   .mw-section-heading, .mw-section-body {
     padding-left: $padding * 2;
+    padding-bottom: 0;
     position: relative;
     z-index: 1;
   }
 
   .mw-section-heading {
     padding-top: 0;
-    padding-bottom: 0;
   }
 
   label {
@@ -86,5 +78,27 @@ footer.site-footer {
     border-color: $blue;
     width: 100%;
     text-align: center;
+  }
+}
+
+.mw-site-info {
+  padding-left: $padding * 2;
+  position: relative;
+  z-index: 2;
+
+  .col-sm-8 {
+    padding-left: 0;
+  }
+
+  p {
+    padding: 0;
+  }
+
+  a {
+    color: $white;
+    text-decoration: underline;
+    &:hover {
+      color: $blue;
+    }
   }
 }

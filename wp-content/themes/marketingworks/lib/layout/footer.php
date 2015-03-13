@@ -11,13 +11,11 @@ function gsep_do_footer() {
         <div class="col-md-3 mw-contact-info">
             <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/logo-whiteout.png" alt=""/>
             <p>Marketing Works<br>3315 Concord Road<br>York, Pennsylvania 17402<br>717-852-7171</p>
-            <p><a href="#">Terms</a> - <a href="#">Privacy Policy</a></p>
-            <p>&copy; Copyright <?php echo date("Y"); ?> Marketing Works. All rights reserved.</p>
+            <p>Norfolk Location<br>420 Monticello Avenue, 403B<br>Norfolk, VA 23510</p>
         </div>
         <div class="col-md-9 mw-contact-form">
             <h2 class="mw-section-heading">Ready To Unlock Your Boldness?</h2>
             <div class="mw-section-body row">
-<!--                --><?php //gravity_form( '1', $display_title = false, $display_description = false ); ?>
                 <form action="#">
                     <div class="col-sm-5">
                         <input name="mw-name" id="mw-name" type="text" placeholder="Name" />
@@ -35,8 +33,16 @@ function gsep_do_footer() {
                         <input name="mw-submit" id="mw-submit" type="submit" value="Send Message" />
                     </div>
                 </form>
-            </div>
-        </div>
+            </div><!-- .section-body.row -->
+            <div class="mw-site-info row">
+                <div class="col-sm-8">
+                    <p>&copy; Copyright <?php echo date("Y"); ?> Marketing Works. All rights reserved.</p>
+                </div>
+                <div class="col-sm-4">
+                    <p><a href="#">Terms</a> - <a href="#">Privacy Policy</a></p>
+                </div>
+            </div><!-- .site-info -->
+        </div><!-- .mw-contact-form -->
     </div><!-- .row -->
     <?php
 }

@@ -8,7 +8,7 @@ body {
 
 /*** homepage ***/
 aside.mw-feature {
-  background: url( $images + "hero-image.png") no-repeat center center;
+  background: url( $images + "hero-image-2.jpg") no-repeat center center;
   background-size: cover;
   margin-left: -1px;
   padding-top: $padding * 8;
@@ -17,10 +17,10 @@ aside.mw-feature {
   p.mw-feature-text {
     color: $white;
     font-size: 3rem;
-    font-weight: 500;
+    font-weight: 700;
     text-transform: uppercase;
     strong {
-      font-weight: 500;
+      font-weight: 900;
       background-color: $bluedark;
       padding: 0 10px;
     }
@@ -28,12 +28,12 @@ aside.mw-feature {
 }
 
 div.entry-content {
-  padding: ($padding * 6) 0;
+  padding: 0;
   text-align: center;
 
-  div.col-sm-5, div.col-sm-7 {
-    padding-bottom: $padding * 2;
-    padding-top: $padding * 2;
+  div.col-sm-4, div.col-sm-8 {
+    padding-bottom: $padding * 3;
+    padding-top: $padding * 3;
   }
 
   &:before {
@@ -79,6 +79,14 @@ div.entry-content {
       }
     }
 
+    &.mw-tab-left:hover {
+      background: rgba($red, 0.3);
+    }
+
+    &.mw-tab-right:hover {
+      background: rgba($blue, 0.3);
+    }
+
     &.active {
       background: rgba($purple, 0.6);
 
@@ -101,6 +109,25 @@ div.entry-content {
         color: $white;
       }
     }
+
+    &.mw-tab-left.active {
+      background: rgba($red, 0.6);
+      &:after {
+        border-top-color: $redlight;
+      }
+      &:hover{
+        background: rgba($red, 0.6);
+      }
+    }
+    &.mw-tab-right.active {
+      background: rgba($blue, 0.6);
+      &:after {
+        border-top-color: $bluelight;
+      }
+      &:hover{
+        background: rgba($blue, 0.6);
+      }
+    }
   }
 }
 
@@ -109,11 +136,13 @@ div.entry-content {
   color: rgba($white, 0.8);
   padding: ($padding * 4) 0;
   min-height: 450px;
-//  display: none;
 
-//  &.mw-tab-section-current {
-//    display: block;
-//  }
+  &#mw-section-left {
+    background: $red;
+  }
+  &#mw-section-right {
+    background: $blue;
+  }
 
   .mw-tab-heading {
     color: $white;
@@ -167,26 +196,28 @@ div.entry-content {
     ::placeholder {
       color: $header;
     }
+
+    .mw-submit {
+      background: $green;
+      color: $header;
+      font-weight: 500;
+      border: 1px solid $green;
+      width: 100%;
+
+      &:hover {
+        background: $header;
+        color: $green;
+        border-color: $header;
+      }
+
+      &:active {
+        background: transparent;
+        color: $header;
+        border-color: $header;
+      }
+    }
   }
 
-  .mw-submit {
-    background: $green;
-    color: $header;
-    border: 1px solid $green;
-    width: 100%;
-
-    &:hover {
-      background: $header;
-      color: $green;
-      border-color: $header;
-    }
-
-    &:active {
-      background: transparent;
-      color: $green;
-      border-color: $green;
-    }
-  }
 }
 
 // main sections
@@ -202,18 +233,24 @@ div.entry-content {
 
 .mw-section-green {
   background: $green;
-  height: 1000px;
   position: relative;
 
-  .mw-section-hero {
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 1;
-  }
+  .mw-work-samples {
+    padding-top: $padding * 2;
+    padding-bottom: $padding * 2;
 
-  .mw-section-heading {
-    margin-top: $padding * 8;
+    .mw-work-sample {
+      width: 33%;
+      float: left;
+
+      .mw-work-sample-link {
+        width: 100%;
+        height: 200px;
+        display: block;
+        background-position: center center !important;
+        background-size: cover !important;
+      }
+    }
   }
 }
 
@@ -246,7 +283,7 @@ div.entry-content {
 
 .mw-section-white {
   text-align: center;
-  padding: ($padding * 4) 0;
+  padding: ($padding * 2) 0 0 0;
 
   .mw-section-heading {
     color: $green;

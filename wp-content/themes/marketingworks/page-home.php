@@ -43,10 +43,10 @@ function mw_entry_content() {
     ?>
     <div class="wrap">
         <div class="row">
-            <div class="col-sm-5">
+            <div class="col-sm-4">
                 <?php the_post_thumbnail(); ?>
             </div>
-            <div class="col-sm-7">
+            <div class="col-sm-8">
                 <?php the_content(); ?>
             </div>
         </div>
@@ -73,9 +73,9 @@ function mw_homepage_tabs()
     <div class="mw-tabs" id="mw-tabs">
         <div class="wrap">
             <ul class="row mw-tabs-head" id="mw-tabs-head">
-                <li class="mw-tab col-sm-4"><a href="#mw-section-left" ><?php echo $left_tab_title; ?></a></li>
-                <li class="mw-tab col-sm-4" id="mw-tab-default"><a href="#mw-section-center" ><?php echo $center_tab_title ?></a></li>
-                <li class="mw-tab col-sm-4"><a href="#mw-section-right" ><?php echo $right_tab_title; ?></a></li>
+                <li class="mw-tab mw-tab-left col-sm-4"><a href="#mw-section-left" ><?php echo $left_tab_title; ?></a></li>
+                <li class="mw-tab mw-tab-center col-sm-4" id="mw-tab-default"><a href="#mw-section-center" ><?php echo $center_tab_title ?></a></li>
+                <li class="mw-tab mw-tab-right col-sm-4"><a href="#mw-section-right" ><?php echo $right_tab_title; ?></a></li>
             </ul>
         </div>
 
@@ -115,8 +115,8 @@ function mw_homepage_tabs()
                     </select>
                     <input name="mw-org" id="mw-org" type="text" placeholder="Business / Company Name" />
                     <input name="mw-email" id="mw-email" type="email" placeholder="Email" />
+                    <input name="mw-submit" id="mw-submit" class="mw-submit" type="submit" value="Send Message" />
                 </div>
-                <input name="mw-submit" id="mw-submit" class="mw-submit" type="submit" value="Send Message" />
             </form>
         </div>
     </div>
@@ -137,12 +137,74 @@ function mw_homepage_sections()
 
     ?>
     <article class="mw-section mw-section-green">
-        <img class="mw-section-hero" src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/portfolio-hero-image.png" alt="Portfolio"/>
         <div class="wrap">
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col-sm-5 mw-work-samples">
+                    <div class="mw-work-sample">
+                        <?php $ID = 134; //turkey hill safari ?>
+                        <a class="mw-work-sample"
+                           href="our-work/#<?php echo get_the_title( $ID ) ?>"
+                           style="background: url('<?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id( $ID ), 'post-thumbnail' );
+                           echo $thumb['0']; ?>') no-repeat center center transparent;"></a>
+                    </div>
+                    <div class="mw-work-sample">
+                        <?php $ID = 138; //oasis imaging ?>
+                        <a class="mw-work-sample-link"
+                           href="our-work/#<?php echo get_the_title( $ID ) ?>"
+                           style="background: url('<?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id( $ID ), 'post-thumbnail' );
+                           echo $thumb['0']; ?>') no-repeat center center transparent;"></a>
+                    </div>
+                    <div class="mw-work-sample">
+                        <?php $ID = 139; //orthopedic urgent care ?>
+                        <a class="mw-work-sample-link"
+                           href="our-work/#<?php echo get_the_title( $ID ) ?>"
+                           style="background: url('<?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id( $ID ), 'post-thumbnail' );
+                           echo $thumb['0']; ?>') no-repeat center center transparent;"></a>
+                    </div>
+                    <div class="mw-work-sample">
+                        <?php $ID = 140; //here we grow ?>
+                        <a class="mw-work-sample-link"
+                           href="our-work/#<?php echo get_the_title( $ID ) ?>"
+                           style="background: url('<?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id( $ID ), 'post-thumbnail' );
+                           echo $thumb['0']; ?>') no-repeat center center transparent;"></a>
+                    </div>
+                    <div class="mw-work-sample">
+                        <?php $ID = 141; //princeton caring for kids ?>
+                        <a class="mw-work-sample-link"
+                           href="our-work/#<?php echo get_the_title( $ID ) ?>"
+                           style="background: url('<?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id( $ID ), 'post-thumbnail' );
+                           echo $thumb['0']; ?>') no-repeat center center transparent;"></a>
+                    </div>
+                    <div class="mw-work-sample">
+                        <?php $ID = 142; //princeton oncology ?>
+                        <a class="mw-work-sample-link"
+                           href="our-work/#<?php echo get_the_title( $ID ) ?>"
+                           style="background: url('<?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id( $ID ), 'post-thumbnail' );
+                           echo $thumb['0']; ?>') no-repeat center center transparent;"></a>
+                    </div>
+                    <div class="mw-work-sample">
+                        <?php $ID = 146; //princeton topless?>
+                        <a class="mw-work-sample-link"
+                           href="our-work/#<?php echo get_the_title( $ID ) ?>"
+                           style="background: url('<?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id( $ID ), 'post-thumbnail' );
+                           echo $thumb['0']; ?>') no-repeat center center transparent;"></a>
+                    </div>
+                    <div class="mw-work-sample">
+                        <?php $ID = 147; //fairfax vein center ?>
+                        <a class="mw-work-sample-link"
+                           href="our-work/#<?php echo get_the_title( $ID ) ?>"
+                           style="background: url('<?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id( $ID ), 'post-thumbnail' );
+                           echo $thumb['0']; ?>') no-repeat center center transparent;"></a>
+                    </div>
+                    <div class="mw-work-sample">
+                        <?php $ID = 134; //marketing works ?>
+                        <a class="mw-work-sample-link"
+                           href="our-work/#<?php echo get_the_title( $ID ) ?>"
+                           style="background: url('<?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id( $ID ), 'post-thumbnail' );
+                           echo $thumb['0']; ?>') no-repeat center center transparent;"></a>
+                    </div>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-7">
                     <h2 class="mw-section-heading"><?php echo $green_heading; ?></h2>
                     <div class="mw-section-body"><?php echo $green_body; ?></div>
                 </div>

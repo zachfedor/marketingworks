@@ -44,7 +44,7 @@ function gsep_archive_loop() {
             ?>
             <article class="mw-post-list-item row">
                 <div class="col-sm-4">
-                    <?php get_post_thumbnail_id(); ?>
+                    <?php  echo get_the_post_thumbnail(); ?>
                 </div>
                 <div class="col-sm-8">
                     <h2 class="mw-post-title"><?php echo get_the_title(); ?></h2>
