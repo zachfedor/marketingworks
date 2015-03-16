@@ -271,8 +271,8 @@ function mw_prefooter() {
         <div class="col-xs-6 col-lg-3 mw-prefooter-block mw-prefooter-news">
             <h3 class="mw-section-title">Marketing Budgets Demystified</h3>
             <p class="mw-section-meta">March 15, 2015</p>
-            <p class="mw-section-body">What's the best approach to determining a marketing budget for a healthcare provider? Get an expert, insider's perspective from Tina Rudisill, President of Marketing Works, in her new article (the first of a four-part series) published in AXIS Imaging News.</p>
-            <a class="mw-button mw-button-continue" href="#">Continue Reading</a>
+            <p class="mw-section-body">What’s the best approach to determining a marketing budget for a healthcare provider? Get an expert, insider’s perspective from Tina Rudisill, President of Marketing Works, in her new article (the first of a four-part series), coming soon in AXIS Imaging News</p>
+            <a class="mw-button mw-button-continue" href="http://www.axisimagingnews.com/">Continue Reading</a>
         </div>
         <div class="col-xs-6 col-lg-3 mw-prefooter-block mw-prefooter-three">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/cogs.jpg" alt="widget 3"/>
