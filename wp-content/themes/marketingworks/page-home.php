@@ -93,7 +93,7 @@ function mw_homepage_tabs()
                                 <p>Fill out the form below and we will be in touch shortly</p>
                             </div>
                             <div class="mw-tab-form-section">
-                                <?php echo do_shortcode( '[contact-form-7 id="211" title="Homepage Contact Form"]' ); ?>
+                            <?php echo do_shortcode( '[contact-form-7 id="211" title="Homepage Contact Form"]' ); ?>
                             </div>
                         </form>
                     </div>
@@ -273,14 +273,20 @@ function mw_prefooter() {
         <div class="col-xs-6 col-md-3 mw-prefooter-block">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/awards-block-01.png" alt="widget 1"/>
         </div>
-        <div class="col-xs-6 col-md-3 mw-prefooter-block">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/news-block-01.png" alt="widget 2"/>
+        <div class="col-xs-6 col-md-3 mw-prefooter-block mw-prefooter-news">
+            <h3 class="mw-section-title">Marketing Budgets Demystified</h3>
+            <p class="mw-section-meta">March 15, 2015</p>
+            <p class="mw-section-body">What's the best approach to determining a marketing budget for a healthcare provider? Get an expert, insider's perspective from Tina Rudisill, President of Marketing Works, in her new article (the first of a four-part series) published in AXIS Imaging News.</p>
+            <a class="mw-button mw-button-continue" href="#">Continue Reading</a>
         </div>
         <div class="col-xs-6 col-md-3 mw-prefooter-block">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/hiring-block-01.png" alt="widget 3"/>
         </div>
-        <div class="col-xs-6 col-md-3 mw-prefooter-block">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/social-block-01.png" alt="widget 4"/>
+        <div class="col-xs-6 col-md-3 mw-prefooter-block mw-prefooter-social">
+            <h3 class="mw-section-title">Facebook</h3>
+            <p class="mw-section-meta">February 11, 2015</p>
+            <p class="mw-section-body">With the Oscars just around the corner - here's what advertisers have planned <a href="http://adage.com/…/cmo-s…/advertisers-planned-oscars/297080/">http://adage.com/…/cmo-s…/advertisers-planned-oscars/297080/</a></p>
+            <a class="mw-button mw-button-continue" href="https://www.facebook.com/trgMarketingWorks">Continue Reading</a>
         </div>
     </aside>
     <a name="contact-us"></a>

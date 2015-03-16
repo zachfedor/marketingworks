@@ -398,12 +398,44 @@ aside.mw-prefooter {
 
   div.mw-prefooter-block {
     padding: 0;
+    height: 475px;
 
     img {
       height: 100%;
       width: 100%;
       display: block;
     }
+
+    .mw-section-title, .mw-section-meta, .mw-section-body {
+      margin: $padding;
+      padding: 0;
+    }
+
+    .mw-button-continue {
+      margin: $padding;
+      background: $white;
+      color: $header;
+      border-color: $white;
+
+      &:hover {
+        background: $header;
+        border-color: $header;
+        color: $white;
+      }
+
+      &:active {
+        background: transparent;
+        border-color: $header;
+        color: $header;
+      }
+    }
+  }
+
+  .mw-prefooter-news {
+    background: $green;
+  }
+  .mw-prefooter-social {
+    background: $blue;
   }
 }
 
