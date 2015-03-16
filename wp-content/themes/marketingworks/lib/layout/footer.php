@@ -38,7 +38,7 @@ function gsep_do_footer() {
                     <p>&copy; Copyright <?php echo date("Y"); ?> Marketing Works. All rights reserved.</p>
                 </div>
                 <div class="col-sm-4">
-                    <p><a href="#">Terms</a> - <a href="#">Privacy Policy</a></p>
+                    <p><a href="under-construction/">Terms</a> - <a href="under-construction/">Privacy Policy</a></p>
                 </div>
             </div><!-- .site-info -->
         </div><!-- .mw-contact-form -->
