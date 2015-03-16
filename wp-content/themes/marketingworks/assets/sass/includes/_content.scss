@@ -27,7 +27,7 @@ aside.mw-feature {
   }
 }
 
-div.entry-content {
+.home div.entry-content {
   padding: 0;
   text-align: center;
 
@@ -240,17 +240,17 @@ div.entry-content {
 }
 
 // main sections
-.mw-section-heading {
+.home .mw-section-heading {
   color: $white;
   text-transform: uppercase;
   padding: ($padding * 2) 0;
 }
 
-.mw-section-body {
+.home .mw-section-body {
   padding-bottom: ($padding * 2);
 }
 
-.mw-section-green {
+.home .mw-section-green {
   background: $green;
   position: relative;
 
@@ -282,7 +282,7 @@ div.entry-content {
   }
 }
 
-.mw-section-blue {
+.home .mw-section-blue {
   background: $blue;
   color: $white;
   text-align: center;
@@ -309,7 +309,7 @@ div.entry-content {
   }
 }
 
-.mw-section-white {
+.home .mw-section-white {
   text-align: center;
   padding: ($padding * 2) 0 0 0;
 
@@ -323,7 +323,7 @@ div.entry-content {
 }
 
 // stupid gears
-main.content, .mw-tab-section, .mw-section {
+.home main.content, .home .mw-tab-section, .home .mw-section {
   position: relative;
 
   &:before {
@@ -340,7 +340,7 @@ main.content, .mw-tab-section, .mw-section {
   }
 }
 
-main.content {
+.home main.content {
   &:before {
     content: url( $images + "about-background-one.png" );
   }
@@ -349,7 +349,7 @@ main.content {
   }
 }
 
-.mw-tab-section {
+.home .mw-tab-section {
   &:before {
     content: url( $images + "tab-section-background.png" );
     top: 10px;
@@ -475,7 +475,75 @@ aside.mw-prefooter {
 }
 
 /*** archive pages ***/
-.entry {
-  padding: 0;
-  margin: 0;
+.page-template-page_archive {
+  .mw-page-header {
+    background: $red;
+    padding: 0 5%;
+    width: 100%;
+    position: relative;
+
+    .mw-page-heading {
+      color: $white;
+      text-align: center;
+      font-size: 4rem;
+      font-width: 900;
+      text-transform: uppercase;
+      padding: ($padding * 10) 0 ($padding * 2);
+    }
+
+    &:before {
+      position: absolute;
+      top: 0;
+      right: 10%;
+      z-index: 0;
+      content: url( $images + "about-background-one.png" );
+    }
+    &:after {
+      position: absolute;
+      bottom: -10px;
+      left: 10%;
+      z-index: 0;
+      content: url( $images + "about-background-two.png" );
+    }
+  }
+
+  main.content {
+    margin: 0 auto;
+    width: 75%;
+  }
+
+  .mw-post-list {
+    @media (min-width: $break-small) {
+      .col-sm-4 {
+        padding-left: 0;
+      }
+      .col-sm-8 {
+        padding-right: 0;
+      }
+    }
+  }
+
+  article.mw-post-list-item {
+    padding-top: $padding * 3;
+    padding-bottom: $padding * 3;
+    border-bottom: 1px solid $grey;
+
+    &:last-child {
+      border: none;
+    }
+
+    .mw-post-title {
+      color: $blue;
+      border-bottom: 1px dotted $grey;
+      padding: $padding 0;
+      margin: 0;
+      @media (min-width: $break-small) {
+        padding: 0 0 $padding;
+      }
+    }
+    .mw-post-excerpt {
+      padding: $padding 0;
+      margin: 0;
+    }
+  }
 }

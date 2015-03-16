@@ -4,9 +4,18 @@
 
 add_filter('genesis_pre_get_option_site_layout', '__genesis_return_full_width_content');
 
+add_action( 'genesis_before_content', 'mw_page_heading' );
+function mw_page_heading() {
+    ?>
+    <div class="mw-page-header">
+        <h1 class="mw-page-heading"><?php echo ( get_the_title() == "Our Work" ? "A Healthy Body... Of Work" : "This Page Is Under Construction" );?></h1>
+    </div>
+    <?php
+}
+
 remove_action( 'genesis_loop', 'genesis_do_loop' );
-add_action( 'genesis_loop', 'gsep_archive_loop' );
-function gsep_archive_loop() {
+add_action( 'genesis_loop', 'mw_archive_loop' );
+function mw_archive_loop() {
     global $post;
 
     if ( get_the_title() == "Our Work" ) {
@@ -43,6 +52,7 @@ function gsep_archive_loop() {
         while ( $loop->have_posts() ) : $loop->the_post();
             ?>
             <article class="mw-post-list-item row">
+                <a name="<?php echo get_the_title() ?>"></a>
                 <div class="col-sm-4">
                     <?php  echo get_the_post_thumbnail(); ?>
                 </div>

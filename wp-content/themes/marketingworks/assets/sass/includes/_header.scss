@@ -67,6 +67,9 @@ header.site-header {
       color: $bluedark;
     }
   }
+  .genesis-nav-menu .current-menu-item a {
+    color: $red;
+  }
 
   .mw-menu-phone a:hover {
     color: $header;
