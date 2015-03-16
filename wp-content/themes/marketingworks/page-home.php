@@ -19,7 +19,7 @@ function mw_hero_image()
     ?>
     <aside class="mw-feature">
         <div class="wrap">
-            <p class="mw-feature-text">Creating strategically <strong>disruptive,</strong> Experientially <strong>remarkable,</strong> Undeniably <strong>unexpected,</strong> Ways to <strong>wow,</strong> engage, and inspire - <strong>together</strong></p>
+            <p class="mw-feature-text">Creating strategically <strong>disruptive,</strong> experientially <strong>remarkable,</strong> undeniably <strong>unexpected</strong> ways to <strong>wow,</strong> engage, and inspire - <strong>together</strong></p>
         </div><!-- .wrap -->
     </aside><!-- .mw-feature -->
     <?php
