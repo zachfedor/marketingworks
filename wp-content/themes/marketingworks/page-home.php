@@ -19,12 +19,7 @@ function mw_hero_image()
     ?>
     <aside class="mw-feature">
         <div class="wrap">
-            <p class="mw-feature-text">
-                Creating strategically <strong>disruptive,</strong> Experientially <strong>remarkable,</strong> Undeniably <strong>unexpected,</strong> Ways to <strong>wow,</strong> engage,
-            </p>
-            <p class="mw-feature-text">
-                and inspire - <strong>together</strong>
-            </p>
+            <p class="mw-feature-text">Creating strategically <strong>disruptive,</strong> Experientially <strong>remarkable,</strong> Undeniably <strong>unexpected,</strong> Ways to <strong>wow,</strong> engage, and inspire - <strong>together</strong></p>
         </div><!-- .wrap -->
     </aside><!-- .mw-feature -->
     <?php
@@ -270,19 +265,19 @@ add_action( 'genesis_before_footer', 'mw_prefooter' );
 function mw_prefooter() {
     ?>
     <aside class="mw-prefooter row">
-        <div class="col-xs-6 col-md-3 mw-prefooter-block">
+        <div class="col-xs-6 col-lg-3 mw-prefooter-block mw-prefooter-one">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/awards-block-01.png" alt="widget 1"/>
         </div>
-        <div class="col-xs-6 col-md-3 mw-prefooter-block mw-prefooter-news">
+        <div class="col-xs-6 col-lg-3 mw-prefooter-block mw-prefooter-news">
             <h3 class="mw-section-title">Marketing Budgets Demystified</h3>
             <p class="mw-section-meta">March 15, 2015</p>
             <p class="mw-section-body">What's the best approach to determining a marketing budget for a healthcare provider? Get an expert, insider's perspective from Tina Rudisill, President of Marketing Works, in her new article (the first of a four-part series) published in AXIS Imaging News.</p>
             <a class="mw-button mw-button-continue" href="#">Continue Reading</a>
         </div>
-        <div class="col-xs-6 col-md-3 mw-prefooter-block">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/hiring-block-01.png" alt="widget 3"/>
+        <div class="col-xs-6 col-lg-3 mw-prefooter-block mw-prefooter-three">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/cogs.jpg" alt="widget 3"/>
         </div>
-        <div class="col-xs-6 col-md-3 mw-prefooter-block mw-prefooter-social">
+        <div class="col-xs-6 col-lg-3 mw-prefooter-block mw-prefooter-social">
             <h3 class="mw-section-title">Facebook</h3>
             <p class="mw-section-meta">February 11, 2015</p>
             <p class="mw-section-body">With the Oscars just around the corner - here's what advertisers have planned <a href="http://adage.com/…/cmo-s…/advertisers-planned-oscars/297080/">http://adage.com/…/cmo-s…/advertisers-planned-oscars/297080/</a></p>

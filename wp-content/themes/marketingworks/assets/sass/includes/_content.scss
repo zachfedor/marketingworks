@@ -398,7 +398,20 @@ aside.mw-prefooter {
 
   div.mw-prefooter-block {
     padding: 0;
-    height: 475px;
+    height: auto;
+
+    @media (min-width: 768px) {
+      height: 400px;
+    }
+    @media (min-width: 992px) {
+      height: 475px;
+    }
+    @media (min-width: 1200px) {
+      height: 525px;
+    }
+    @media (min-width: 1400px) {
+      height: 475px;
+    }
 
     img {
       height: 100%;
@@ -407,12 +420,36 @@ aside.mw-prefooter {
     }
 
     .mw-section-title, .mw-section-meta, .mw-section-body {
-      margin: $padding;
+      margin: 0;
       padding: 0;
     }
 
+    .mw-section-title {
+      margin: ($padding * 2) ($padding * 2) 0 ($padding * 2);
+    }
+
+    .mw-section-meta {
+      margin: ($padding / 2) ($padding * 2);
+    }
+
+    .mw-section-body {
+      margin: 0 ($padding * 2) ($padding * 2);
+    }
+
+    &.mw-prefooter-social {
+      .mw-section-title, .mw-section-body, .mw-section-meta {
+        color: $white;
+      }
+    }
+
+    &.mw-prefooter-news {
+      .mw-section-meta {
+        color: $blue;
+      }
+    }
+
     .mw-button-continue {
-      margin: $padding;
+      margin: 0 ($padding * 2) $padding;
       background: $white;
       color: $header;
       border-color: $white;
