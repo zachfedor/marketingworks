@@ -160,7 +160,7 @@ aside.mw-feature {
   margin: 0;
   position: relative;
 
-  form {
+  .mw-form-wrap {
     width: 90%;
     float: right;
     background: $greylight;
@@ -185,7 +185,7 @@ aside.mw-feature {
   .mw-tab-form-section {
     padding: $padding;
 
-    input, select {
+    input, textarea {
       color: $header;
       border: 1px solid $header;
       background: transparent;
@@ -244,7 +244,7 @@ aside.mw-feature {
 }
 
 // main sections
-.home .mw-section-heading {
+.mw-section-heading {
   color: $white;
   text-transform: uppercase;
   padding: ($padding * 2) 0;
@@ -298,17 +298,31 @@ aside.mw-feature {
   }
   .mw-section-logos {
     width: 100%;
+    margin: 0 auto;
+
     span {
       display: block;
       float: left;
-      width: 10%;
+      width: 12.5%;
 
       img {
         height: auto;
       }
     }
     span + span {
+      width: 10%;
       margin-left: 2.5%;
+    }
+  }
+  .mw-section-logos + .mw-section-logos {
+    margin-top: ($padding * 2);
+    width: 40%;
+    span {
+      width: 33%;
+    }
+    span + span {
+      width: 30%;
+      margin-left: 3%;
     }
   }
 }

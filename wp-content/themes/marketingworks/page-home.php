@@ -82,15 +82,15 @@ function mw_homepage_tabs()
                     </div>
 
                     <div class="mw-tab-form col-md-6">
-                        <form method="post" action="">
+                        <div class="mw-form-wrap">
                             <div class="mw-tab-form-header">
-                                <h3>Ready To Unlock Your Boldness?</h3>
-                                <p>Fill out the form below and we will be in touch shortly</p>
+                                <h3>So What Do You Want To Be, Disruptive, Remarkable and/or Unexpected?</h3>
+                                <p>Fill out the form below and we will be in touch</p>
                             </div>
                             <div class="mw-tab-form-section">
                             <?php echo do_shortcode( '[contact-form-7 id="211" title="Homepage Contact Form"]' ); ?>
                             </div>
-                        </form>
+                        </div>
                     </div>
                 </div><!-- .row -->
             </div><!-- .wrap -->
@@ -104,15 +104,15 @@ function mw_homepage_tabs()
                     </div>
 
                     <div class="mw-tab-form col-md-6">
-                        <form method="post" action="">
+                        <div class="mw-form-wrap">
                             <div class="mw-tab-form-header">
-                                <h3>Ready To Unlock Your Boldness?</h3>
-                                <p>Fill out the form below and we will be in touch shortly</p>
+                                <h3>So What Do You Want To Be, Disruptive, Remarkable and/or Unexpected?</h3>
+                                <p>Fill out the form below and we will be in touch</p>
                             </div>
                             <div class="mw-tab-form-section">
                                 <?php echo do_shortcode( '[contact-form-7 id="211" title="Homepage Contact Form"]' ); ?>
                             </div>
-                        </form>
+                        </div>
                     </div>
                 </div><!-- .row -->
             </div><!-- .wrap -->
@@ -126,15 +126,15 @@ function mw_homepage_tabs()
                     </div>
 
                     <div class="mw-tab-form col-md-6">
-                        <form method="post" action="">
+                        <div class="mw-form-wrap">
                             <div class="mw-tab-form-header">
-                                <h3>Ready To Unlock Your Boldness?</h3>
-                                <p>Fill out the form below and we will be in touch shortly</p>
+                                <h3>So What Do You Want To Be, Disruptive, Remarkable and/or Unexpected?</h3>
+                                <p>Fill out the form below and we will be in touch</p>
                             </div>
                             <div class="mw-tab-form-section">
                                 <?php echo do_shortcode( '[contact-form-7 id="211" title="Homepage Contact Form"]' ); ?>
                             </div>
-                        </form>
+                        </div>
                     </div>
                 </div><!-- .row -->
             </div><!-- .wrap -->
@@ -238,15 +238,20 @@ function mw_homepage_sections()
         <div class="wrap">
             <h2 class="mw-section-heading"><?php echo $blue_heading; ?></h2>
             <div class="mw-section-body"><?php echo $blue_body; ?></div>
-            <div class="mw-section-logos">
-                <span><img src="<?php echo get_home_url(); ?>/wp-content/uploads/2015/03/history-logo-one.png" alt="history-logo-one" width="216" height="21" /></span>
-                <span><img src="<?php echo get_home_url(); ?>/wp-content/uploads/2015/03/history-logo-two.png" alt="history-logo-two" width="116" height="65" /></span>
-                <span><img src="<?php echo get_home_url(); ?>/wp-content/uploads/2015/03/history-logo-three.png" alt="history-logo-three" width="109" height="66" /></span>
-                <span><img src="<?php echo get_home_url(); ?>/wp-content/uploads/2015/03/history-logo-four.png" alt="history-logo-four" width="86" height="65" /></span>
-                <span><img src="<?php echo get_home_url(); ?>/wp-content/uploads/2015/03/history-logo-five.png" alt="history-logo-five" width="161" height="63" /></span>
-                <span><img src="<?php echo get_home_url(); ?>/wp-content/uploads/2015/03/history-logo-six.png" alt="history-logo-six" width="149" height="68" /></span>
-                <span><img src="<?php echo get_home_url(); ?>/wp-content/uploads/2015/03/history-logo-seven.png" alt="history-logo-seven" width="218" height="44" /></span>
-                <span><img src="<?php echo get_home_url(); ?>/wp-content/uploads/2015/03/history-logo-eight.png" alt="history-logo-eight" width="110" height="59" /></span>
+            <div class="mw-section-logos row">
+                <span><img src="<?php echo get_home_url(); ?>/wp-content/uploads/2015/03/history-logo-one.png" alt="history-logo-one" /></span>
+                <span><img src="<?php echo get_home_url(); ?>/wp-content/uploads/2015/03/history-logo-two.png" alt="history-logo-two" /></span>
+                <span><img src="<?php echo get_home_url(); ?>/wp-content/uploads/2015/03/history-logo-three.png" alt="history-logo-three" /></span>
+                <span><img src="<?php echo get_home_url(); ?>/wp-content/uploads/2015/03/history-logo-four.png" alt="history-logo-four" /></span>
+                <span><img src="<?php echo get_home_url(); ?>/wp-content/uploads/2015/03/history-logo-five.png" alt="history-logo-five" /></span>
+                <span><img src="<?php echo get_home_url(); ?>/wp-content/uploads/2015/03/history-logo-six.png" alt="history-logo-six" /></span>
+                <span><img src="<?php echo get_home_url(); ?>/wp-content/uploads/2015/03/history-logo-seven.png" alt="history-logo-seven" /></span>
+                <span><img src="<?php echo get_home_url(); ?>/wp-content/uploads/2015/03/history-logo-eight.png" alt="history-logo-eight" /></span>
+            </div>
+            <div class="mw-section-logos row">
+                <span><img src="<?php echo get_home_url(); ?>/wp-content/uploads/2015/03/history-logo-nine.png" alt="history-logo-nine" /></span>
+                <span><img src="<?php echo get_home_url(); ?>/wp-content/uploads/2015/03/history-logo-ten.png" alt="history-logo-ten" /></span>
+                <span><img src="<?php echo get_home_url(); ?>/wp-content/uploads/2015/03/history-logo-eleven.png" alt="history-logo-eleven" /></span>
             </div>
         </div>
     </article>
