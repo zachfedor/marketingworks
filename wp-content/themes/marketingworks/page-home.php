@@ -284,8 +284,8 @@ function mw_prefooter() {
         </div>
         <div class="col-xs-6 col-lg-3 mw-prefooter-block mw-prefooter-social">
             <h3 class="mw-section-title">Facebook</h3>
-            <p class="mw-section-meta">February 11, 2015</p>
-            <p class="mw-section-body">With the Oscars just around the corner - here's what advertisers have planned <a href="http://adage.com/…/cmo-s…/advertisers-planned-oscars/297080/">http://adage.com/…/cmo-s…/advertisers-planned-oscars/297080/</a></p>
+            <p class="mw-section-meta">March 18, 2015</p>
+            <p class="mw-section-body">We are so excited to announce that the vein campaign for Fairfax Radiological Consultants, PC won a People's Choice award at the annual RBMA Building Better Marketing Programs Quest Awards.</p>
             <a class="mw-button mw-button-continue" href="https://www.facebook.com/trgMarketingWorks">Continue Reading</a>
         </div>
     </aside>
